@@ -146,7 +146,8 @@ def gameLoop():
         while gameOver == True:
             gameDisplay.blit(backgroundImage, (0, 0))
             message_to_screen("Game Over!",red,-50,"big")
-            message_to_screen(" Press C to play again or Q to quit",black,50)
+            message_to_screen("Score :"+str(score),black,0,"medium")
+            message_to_screen(" Press C to play again or Q to quit",black,50,'small')
 
             pygame.display.update()
             for event in pygame.event.get():
